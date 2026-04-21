@@ -28,7 +28,7 @@ public class OrderItemRequest {
     private Integer quantity;
 
     @NotNull(message = "Price is required")
-    @Min(value = 0, message = "Price must be non-negative")
+    @Min(value = 1, message = "Price must be greater than 0")
     private BigDecimal price;
 }
 
