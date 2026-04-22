@@ -24,7 +24,6 @@ A production-grade backend system for order processing built with Spring Boot 3,
 - **Swagger/OpenAPI 3.0** (API documentation)
 - **Resilience4j** (Circuit Breaker, Rate Limiter, Bulkhead, Retry)
 - **Lombok** (reduce boilerplate)
-- **MapStruct** (object mapping)
 - **Gradle** (build tool)
 - **Docker** (containerization)
 - **JUnit 5 & Mockito** (testing)
