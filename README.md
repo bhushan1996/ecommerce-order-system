@@ -286,14 +286,13 @@ The Swagger UI provides:
 
 **Context Path Structure:**
 - Application root: `/`
-- API prefix: `/api`
-- Orders resource: `/api/orders`
+- Orders resource: `/orders`
 
 ### Endpoints
 
 #### 1. Create Order
 ```http
-POST /api/orders
+POST /orders
 Content-Type: application/json
 
 {
@@ -339,7 +338,7 @@ Content-Type: application/json
 
 #### 2. Get Order by ID
 ```http
-GET /api/orders/{id}
+GET /orders/{id}
 ```
 
 **Response (200 OK):**
@@ -361,8 +360,8 @@ GET /api/orders/{id}
 
 #### 3. List All Orders
 ```http
-GET /api/orders
-GET /api/orders?status=PENDING
+GET /orders
+GET /orders?status=PENDING
 ```
 
 **Response (200 OK):**
@@ -384,7 +383,7 @@ GET /api/orders?status=PENDING
 
 #### 4. Update Order Status
 ```http
-PUT /api/orders/{id}/status
+PUT /orders/{id}/status
 Content-Type: application/json
 
 {
@@ -408,7 +407,7 @@ Content-Type: application/json
 
 #### 5. Cancel Order
 ```http
-POST /api/orders/{id}/cancel
+POST /orders/{id}/cancel
 ```
 
 **Response (200 OK):**
